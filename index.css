@@ -1,0 +1,45 @@
+.board{
+  border: 3px solid black;
+  display: grid;
+  width: calc(var(--blocoTamanho)*8);
+  grid-template-columns: var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho);
+  grid-template-rows: var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho) var(--blocoTamanho);
+}
+
+:root{
+  --blocoTamanho:2em;
+  --darkColor:black;
+  --lightColor:gray;
+  --pieceTamanho:1.5em;
+}
+
+.block{
+  width:var(--blocoTamanho);
+  height: var(--blocoTamanho);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light{
+  background-color: var(--lightColor);
+}
+
+.dark{
+  background-color: var(--darkColor)
+}
+
+
+.piece{
+  width: var(--pieceTamanho);
+  height: var(--pieceTamanho);
+  border-radius: 50%;
+}
+
+.piece-light{
+  background-color: white;
+}
+
+.piece-dark{
+  background-color: brown;
+}
